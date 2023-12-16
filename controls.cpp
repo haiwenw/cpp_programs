@@ -9,31 +9,31 @@ const double pi = 4.0*atan(1.0);
 
 int main()
 {
-    // ofstream out;
-    // out.open('table.xls');
-    // for (short unsigned int t = 0; t <=10; t++)
-    // {
-    //     out << t << '\t' << t*t << endl;
-    // }
-
-    // out.close();
-    // return 0;
-    int number;
-
-    cout << setiosflags (ios :: left );
-    cout.width(20);
-    cout << "Number" << "Square Root" << endl << endl;
-
-    cout.setf(ios::fixed);
-    cout.precision(2);
-
-    for (number=1; number<=10; number = number + 1)
+    ofstream out;
+    out.open("table.xls");
+    for (short unsigned int t = 0; t <=10; t++)
     {
-        cout.width(20);
-        cout << number << sqrt(number) << "\n";
+        out << t << '\t' << t*t << endl;
     }
 
+    out.close();
     return 0;
+    // int number;
+
+    // cout << setiosflags (ios :: left );
+    // cout.width(20);
+    // cout << "Number" << "Square Root" << endl << endl;
+
+    // cout.setf(ios::fixed);
+    // cout.precision(2);
+
+    // for (number=1; number<=10; number = number + 1)
+    // {
+    //     cout.width(20);
+    //     cout << number << sqrt(number) << "\n";
+    // }
+
+    // return 0;
 
 
     // float number;
