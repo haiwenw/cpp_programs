@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cmath>
 #include<fstream>
-#include"cdf.h"
+#include"CDF.h"
 
 using namespace std;
 
@@ -10,12 +10,12 @@ using namespace std;
 int main()
 {
     double Call_Option, d1, d2;
-    double S=100, E=100, r=0.05, vol=0.2, tau=0.05;
+    double S=150, E=100, r=0.05, vol=0.2, tau=0.05;
 
     ofstream out;
     out.open("BSE.xls");
 
-    for (S=0; S<=200; S+=5)
+    for (S=0; S<=300; S+=5)
     {
         d1 = (log(S/E) + (r+0.5*vol*vol)*tau) / (vol*sqrt(tau));
         d2 = d1 - vol*sqrt(tau);

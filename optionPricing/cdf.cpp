@@ -1,4 +1,4 @@
-#include"cdf.h"
+#include"CDF.h"
 
 double CDF(double X)
 {
